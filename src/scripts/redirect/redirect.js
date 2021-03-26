@@ -7,6 +7,7 @@ export default class Redirect {
         this.urlBase = 'http://127.0.0.1:5500/src/pages/quiz.html';
         this.quizNum = 0;
         this.resultPage = 'http://127.0.0.1:5500/src/pages/redirect.html?redirect=3'
+        this.This = this;
     }
 
     structures = [
@@ -70,7 +71,8 @@ export default class Redirect {
 
         this.quizNum = Number(quizParameter) + 1
 
-        this.handleTimeout(`${this.urlBase}?quiz=${this.quizNum}`)
+        if (window.location.href !== this.resultPage)
+            this.handleTimeout(`${this.urlBase}?quiz=${this.quizNum}`)
     }
 
     redirectToNextPage(url) {
