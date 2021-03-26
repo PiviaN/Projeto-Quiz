@@ -58,7 +58,24 @@ body {
     color: #F80000;
 }
 
-.redirectFirstMessageBottom, .redirectSecondMessageBottom, .finishMessageBottom {
+.redirectFirstMessageBottom, .redirectSecondMessageBottom{
     position: absolute;
     top: 94%;
+}
+
+.finishMessageBottom {
+    position: absolute;
+    top: 90%;
+}
+
+.link-no-display {
+    display: none;
+}
+
+.link-display {
+    display: inherit;
+    position: absolute;
+    top: 94%;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
