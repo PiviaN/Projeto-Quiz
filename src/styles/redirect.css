@@ -58,13 +58,15 @@ body {
     color: #F80000;
 }
 
-.redirectFirstMessageBottom, .redirectSecondMessageBottom{
+.redirectFirstMessageBottom, .redirectSecondMessageBottom, .finishMessageBottom {
     position: absolute;
+}
+
+.redirectFirstMessageBottom, .redirectSecondMessageBottom{
     top: 94%;
 }
 
 .finishMessageBottom {
-    position: absolute;
     top: 90%;
 }
 
