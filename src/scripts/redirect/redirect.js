@@ -89,4 +89,3 @@ export default class Redirect {
         this.handleRedirection(url)
     }
 }
-
