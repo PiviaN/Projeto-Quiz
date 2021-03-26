@@ -7,6 +7,7 @@ export default class Redirect {
         this.urlBase = 'http://127.0.0.1:5500/src/pages/quiz.html';
         this.quizNum = 0;
         this.resultPage = 'http://127.0.0.1:5500/src/pages/redirect.html?redirect=3'
+        this.$link = document.querySelector('a')
     }
 
     structures = [
@@ -70,8 +71,7 @@ export default class Redirect {
 
         this.quizNum = Number(quizParameter) + 1
 
-        if (window.location.href !== this.resultPage)
-            this.handleTimeout(`${this.urlBase}?quiz=${this.quizNum}`)
+        this.handleTimeout(`${this.urlBase}?quiz=${this.quizNum}`)
     }
 
     redirectToNextPage(url) {
@@ -84,7 +84,10 @@ export default class Redirect {
             this.handleTimeout(`${this.urlBase}?quiz=2`)
             return;
         }
-
-        this.handleRedirection(url)
+        if (window.location.href !== this.resultPage) {
+            this.handleRedirection(url)
+        } else {
+            this.$link.classList.replace('link-no-display', 'link-display')
+        }
     }
 }
