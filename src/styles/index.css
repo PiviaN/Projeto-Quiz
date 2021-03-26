@@ -1,0 +1,46 @@
+body {
+    text-transform: uppercase;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(../img/background-index.PNG);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.introduction-h1 {
+    font-family: 'PT Sans', sans-serif;
+    color: #4D4DFF;
+    display: flex;
+    justify-content: center;
+}
+
+.top-play-message {
+    position: fixed;
+    top: 95%;
+}
+
+.boldMessage {
+    font-style: oblique;
+    font-stretch: narrower;
+    font-family: 'Press Start 2P', cursive;
+    color: blanchedalmond;
+    font-size: 0.96rem;
+}
+
+.startBox {
+    text-decoration: none;
+    position: absolute;
+    border-radius: 15%;
+    left: 42%;
+    top: 24%;
+    width: 16%;
+    height: 10.5%;
+}
+
+.startBox:hover {
+    cursor: pointer;
+    background-color: purple;
+    opacity: 0.2;
+}

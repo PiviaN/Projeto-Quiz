@@ -1,0 +1,64 @@
+body {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.bodyFirstImage {
+    background-image: url(../img/bad-boy-1224x960.jpg);
+}
+
+.bodySecondImage {
+    background-image: url(../img/scary-gamer-1224x960.jpg);
+}
+
+.bodyThirdImage {
+    background-image: url(../img/gamer-boy-1224x960.jpg);
+}
+
+.redirectFirstMessageTop, .redirectFirstMessageBottom {
+    font-family: 'Kanit', sans-serif;
+}
+
+.redirectFirstMessageTop {
+    color: #f6f6f6;
+}
+
+.redirectFirstMessageBottom {
+    color: #DAA520;
+    font-weight: 900;
+}
+
+.redirectSecondMessageTop, .redirectSecondMessageBottom {
+    font-family: 'Amatic SC', cursive;
+}
+
+.redirectSecondMessageTop {
+    color: turquoise;
+}
+
+.redirectSecondMessageBottom {
+    color: #228B22;
+    font-weight: 900;
+}
+
+.finishMessageTop, .finishMessageBottom {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.finishMessageTop {
+    color: #fff000;
+}
+
+.finishMessageBottom {
+    color: #F80000;
+}
+
+.redirectFirstMessageBottom, .redirectSecondMessageBottom, .finishMessageBottom {
+    position: absolute;
+    top: 94%;
+}

@@ -1,0 +1,86 @@
+body {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-image: url(../img/background-quiz-1224x610.jpg);
+}
+
+.question {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Orbitron', sans-serif;
+    color: #FF8C00;
+    font-size: 1.6rem;
+}
+
+.leftside-div:hover, .centerside-div:hover, .rightside-div:hover {
+    opacity: 0.37;
+    background-color: rgb(78, 66, 66);
+    cursor: pointer;
+}
+
+.leftside-div, .centerside-div, .rightside-div {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    border-style: ridge;
+    border-color: transparent;
+    height: 42.96875%;
+    width: 25%;
+    top: 33.3%;
+    height: 50.3%;
+}
+
+.leftside-answers, .centerside-answers, .rightside-answers {
+    color: rgb(241, 241, 241);
+    font-family: 'Domine', serif;
+    list-style-type: none;
+    font-size: 1.3rem;
+    padding: 1.5%;
+}
+
+.leftside-div, .leftside-div-js {
+    left: 6.7%;
+}
+
+.centerside-div, .centerside-div-js {
+    left: 37%;
+}
+
+.rightside-div, .rightside-div-js {
+    left: 67.5%;
+}
+
+.leftside-div-js-no-display, .centerside-div-js-no-display, .rightside-div-js-no-display {
+    display: none;
+}
+
+.leftside-div-js, .centerside-div-js, .rightside-div-js {
+    position: absolute;
+    border-radius: 2%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-style: ridge;
+    height: 50.3%;
+    width: 25%;
+    top: 33.3%;
+    border-width: 5px;
+}
+
+.leftside-div-js {
+    border-color: #fe4164;
+}
+
+.centerside-div-js {
+    border-color: #ffd800;
+}
+
+.rightside-div-js {
+    border-color: #AF69EF;
+}
