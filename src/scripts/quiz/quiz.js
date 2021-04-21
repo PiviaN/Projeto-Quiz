@@ -10,10 +10,10 @@ export default class Quiz {
     this.elementName = '';
     this.listOptions = [];
 
-    this.rightPage = '/src/pages/redirect.html?redirect=1';
-    this.wrongPage = '/src/pages/redirect.html?redirect=2';
+    this.rightPage = 'redirect.html?redirect=1';
+    this.wrongPage = 'redirect.html?redirect=2';
 
-    this.initialPageQuiz = 'http://127.0.0.1:5500/src/pages/quiz.html?quiz=1'
+    this.initialPageQuiz = 'quiz.html?quiz=1'
   }
 
   structures = [

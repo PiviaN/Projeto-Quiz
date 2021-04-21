@@ -4,9 +4,9 @@ export default class Redirect {
         this.$bottomMessage = document.querySelector('.bottomMessage-js')
         this.$body = document.querySelector('.body')
         this.history = document.referrer
-        this.urlBase = 'http://127.0.0.1:5500/src/pages/quiz.html';
+        this.urlBase = 'quiz.html';
         this.quizNum = 0;
-        this.resultPage = 'http://127.0.0.1:5500/src/pages/redirect.html?redirect=3'
+        this.resultPage = 'redirect.html?redirect=3'
         this.$link = document.querySelector('a')
     }
 
